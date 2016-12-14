@@ -14,8 +14,7 @@ npm start
 # use Hot Module Replacement
 npm run server:dev:hmr
 
-# if you're in China use cnpm
-# https://github.com/cnpm/cnpm
+
 ```
 go to [http://0.0.0.0:3000](http://0.0.0.0:3000) or [http://localhost:3000](http://localhost:3000) in your browser
 
@@ -276,8 +275,7 @@ import * as _ from 'lodash';
  * This is a problem with minifying Angular 2 and it's recent JIT templates. If you set `mangle` to `false` then you should be good.
 * Why is the size of my app larger in development?
  * We are using inline source-maps and hot module replacement which will increase the bundle size.
-* If you're in China
- * check out https://github.com/cnpm/cnpm
+
 * If you're looking to add Angular 2 Material Design
  * check out the [material2](https://github.com/AngularClass/angular2-webpack-starter/tree/material2) branch
 * node-pre-gyp ERR in npm install (Windows)
