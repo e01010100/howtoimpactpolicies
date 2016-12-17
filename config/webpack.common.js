@@ -207,7 +207,8 @@ module.exports = function (options) {
        */
       new CopyWebpackPlugin([
         { from: 'src/assets', to: 'assets' },
-        { from: 'src/meta'}
+        { from: 'src/meta'},
+        { from: 'node_modules/bootstrap-material-design/dist', to: 'assets/bootstrap-material-design'}
       ]),
 
 
