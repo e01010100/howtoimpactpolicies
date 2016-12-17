@@ -1,10 +1,6 @@
-import { NgModule, ApplicationRef } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { RouterModule, PreloadAllModules } from '@angular/router';
-import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
-
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { AppCommonModule } from './common/common.module';
 /*
  * Platform and Environment providers/directives/pipes
  */
@@ -32,9 +28,7 @@ import { NoContentComponent } from './no-content';
     NoContentComponent
   ],
   imports: [ // import Angular's modules
-    BrowserModule,
-    FormsModule,
-    HttpModule,
+    AppCommonModule,
     RouterModule.forRoot(ROUTES) /* , { useHash: true, preloadingStrategy: PreloadAllModules }*/
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
