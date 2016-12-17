@@ -3,7 +3,7 @@
  */
 import { Component, ViewEncapsulation } from '@angular/core';
 
-import { AppState } from './app.service';
+
 
 /*
  * App Component
@@ -63,13 +63,12 @@ export class AppComponent {
   name = 'Angular 2 Webpack Starter';
   url = 'https://twitter.com/AngularClass';
 
-  constructor(
-    public appState: AppState) {
+  constructor() {
 
   }
 
   ngOnInit() {
-    console.log('Initial App State', this.appState.state);
+
   }
 
 }
